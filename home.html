@@ -2,51 +2,80 @@
 <html>
     <head>
         <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
         <style>
           #home{
             text-align: center;
-            color: blue;
-            text-shadow: 7px 6px 7px;
+            color: rgb(32, 28, 223);
+            /* text-shadow: 7px 6px 7px; */
+            font-family: 'Nosifer', cursive;
           }
           .head{
             color: rgb(14, 14, 15);
             background-color: aqua;
             text-transform: capitalize;
             text-decoration-style: solid;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: 'Limelight', cursive;
             letter-spacing: 3px;
             box-shadow: 9px 7px 9px;
             
             
           }
           #text{
-            color: brown;
+            color: rgb(12, 8, 235);
             text-decoration: double;
             font-weight: bolder;
           }
           .line{
             color: rgb(228, 28, 218);
             background-color: rgb(112, 235, 64);
+            width:fit-content;
+            height: fit-content;
+          }
+          #list, li{
+            padding: 12px;
+            list-style-type: circle;
+            font-family: 'Acme', sans-serif;
+          }
+          fieldset{
+            box-shadow: 9px 7px 9px;
           }
         </style>
     </head>
     <body>
 
-        <h2 id="home">.......Welcome To My Home Page......</h2>
+        <h2 id="home">Welcome To My Home Page</h2>
         <hr>
-        <h3 class="head"><u>Career Objectives</u>:</h3>
+        <h3 class="head">Career Objectives:</h3>
         <p>TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH </p>
         <hr>
        
             
-                <h3 class="head"><u>Professional Summery</u>:</h3>
+                <h3 class="head">Professional Summery:</h3>
     <fieldset>
 
         <legend>
             <span>Professional Summery</span>
         </legend>
            
-        <ul>
+        <ul id="list">
             <li>Having 5 years of experience in developing Single page Web Application using <span id="text">Angular 13</span>, HTML5, CSS, Bootstrap 5, JavaScript, ES6, TypeScript</li>
             <li class="line">Experience on working with version control system - GIT and GitHub</li>
             <li>Experience working with JIRA for user stories and bug tracking</li>

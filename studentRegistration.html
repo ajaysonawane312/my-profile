@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <style>
+        input[type="text"],input[type="number"],input[type="email"],input[type="password"],input[type="date"]{
+            color: rgb(245, 10, 10);
+            background-color: rgb(104, 224, 233);
+            font-size: medium;
+            width: 250px;
+        }
+        /* input[type="file"]{
+            background-color: rgb(243, 25, 25);
+        } */
+        td, label{
+            color: rgb(18, 2, 236);
+            font-family: 'Acme', sans-serif;
+        }
+        button{
+            background-color: rgb(19, 201, 44);
+        }
+        h3{
+            font-family: 'Nosifer', cursive;
+            color: rgb(162, 4, 224);
+        }
+        .option{
+            background-color: rgb(228, 240, 63);
+        }
+        input [type="checkbox"]{
+            background-color: rgb(243, 5, 5);
+        }
+        fieldset{
+            box-shadow: 9px 7px 9px;
+        }
+        table{
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Student Registration Form</h3>
+    <hr><br>
+    <fieldset>
+        <legend>
+            <span>Student Registration Form</span>
+        </legend>
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <lable>First Name</lable>
+                        </td>
+                        <td><input type="text" maxlength="12" required autofocus
+                                placeholder="First Name with only 10 Characters"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Last Name</lable>
+                        </td>
+                        <td><input type="text" placeholder="Plz Last Name Only"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Age</lable>
+                        </td>
+                        <td><input type="number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Mobile No.</label></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Date of Birth &nbsp;&nbsp;</lable>
+                        </td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Country &nbsp;&nbsp;</lable>
+                        </td>
+                        <td><input type="text" value="India"></td>
+                    </tr>
+                    <tr>
+                        <td>Select Degree</td>
+                        <td>
+                            <select class="option">
+                                <option>Other</option>
+                                <option>MCA</option>
+                                <option>MCS</option>
+                                <option>BE</option>
+                                <option>BCA</option>
+                                <option>BBA</option>
+                                <option>BCS</option>
+                                <option>Bsc</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Select Gender</lable>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender">
+                            <lable>Male</lable>
+                            <input type="radio" name="gender">
+                            <lable>Female</lable>
+                            <input type="radio" name="gender">
+                            <lable>Others</lable>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select Hobby</td>
+                        <td>
+                            <input type="checkbox">
+                            <lable>Reading</lable>
+                            <input type="checkbox">
+                            <lable>Watching Motivational Videos</lable>
+                            <input type="checkbox">
+                            <lable>Dancing</lable>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Present Address</lable>
+                        </td>
+                        <td><textarea rows="5" cols="30"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label>Upload Profile Photo</label></td>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Upload Signature</label></td>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Upload Documents</label></td>
+                        <td><input type="file" multiple></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>
